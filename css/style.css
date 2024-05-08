@@ -1,0 +1,55 @@
+/* shared style  */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  margin: 10px 80px;
+  font-family: "Mulish", sans-serif;
+}
+.primary-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(19, 19, 24);
+}
+
+/* nav style  */
+nav,
+.header-with-logo,
+.nav-ul-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav-ul-tag > li {
+  list-style: none;
+}
+.nav-ul-tag > li > a {
+  text-decoration: none;
+  color: rgb(66, 66, 71);
+  font-weight: 400;
+}
+.nav-ul-tag .home-a{
+    color: rgb(255, 84, 0);
+}
+.travel {
+  color: rgb(255, 84, 0);
+}
+
+/* ===========================================Responsive Code============================================= */
+/* media query style  */
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+  nav,
+  .header-with-logo,
+  .nav-ul-tag {
+    flex-direction: column;
+  }
+}
+
+/* for tablet devices */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    nav,
+    .header-with-logo {
+      flex-direction: column;
+    }
+  }
