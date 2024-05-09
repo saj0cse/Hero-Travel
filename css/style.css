@@ -16,7 +16,7 @@ body {
   color: rgb(255, 255, 255);
   font-weight: 700;
   border: 0;
-  padding: 15px;
+  padding: 17px 30px;
 }
 .paragraph-style {
   color: rgba(19, 19, 24, 0.7);
@@ -32,13 +32,27 @@ body {
   font-size: 0.9rem;
   width: 174px;
 }
+.secondary-title {
+  color: rgb(19, 19, 24);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.why-choose-us-card-container,
+.Simple-Perfect-Place,
+.Newsletter {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 50px;
+  align-items: center;
+}
 
 /* nav style  */
 nav,
 .header-with-logo,
 .nav-ul-tag {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 20px;
 }
@@ -79,8 +93,8 @@ nav,
   justify-content: center;
   align-items: center;
   gap: 15px;
-margin-top: 50px;
-padding: 10px 0 10px 0;
+  margin-top: 50px;
+  padding: 10px 0 10px 0;
 }
 .find-out-btn {
   width: 200px;
@@ -93,7 +107,7 @@ padding: 10px 0 10px 0;
   border: 0;
   padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 174px;
 }
@@ -107,17 +121,134 @@ padding: 10px 0 10px 0;
 }
 
 /* Our-Popular-Tours */
-.Our-Popular-Tours{
-margin-top: 50px;
-display: flex;
-justify-content: space-between;
-gap: 30px;
-align-items: center;
+.Our-Popular-Tours {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
 }
-.Our-Popular-Tours, li {
+.Our-Popular-Tours,
+li {
   margin-top: 20px;
 }
 
+/* Choose-Your-Destination */
+.Choose-Your-Destination-title-container,
+.why-choose-us-title-container {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.destination-1st-img-line {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+/* why choose us */
+.why-choose-us-card-container,
+.Simple-Perfect-Place,
+.Newsletter {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 50px;
+}
+.why-choose-us-1st-card {
+  box-sizing: border-box;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  border-radius: 16px;
+  background: rgba(251, 181, 99, 0.05);
+  padding: 20px;
+}
+.why-choose-us-2nd-card {
+  box-sizing: border-box;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  border-radius: 16px;
+  background: rgba(41, 206, 246, 0.05);
+  padding: 20px;
+}
+.why-choose-us-3rd-card {
+  box-sizing: border-box;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  border-radius: 16px;
+  background: rgba(251, 181, 99, 0.05);
+  padding: 20px;
+}
+
+/* Simple-Perfect-Place */
+
+video {
+  width: auto;
+  height: 200px;
+}
+.see-more {
+  margin-top: 20px;
+}
+
+/* Newsletter */
+.Newsletter > .first-div {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 84, 0);
+  border-radius: 16px;
+  padding: 20px;
+}
+.Newsletter-input-container,
+input,
+button {
+  display: block;
+}
+.input-text {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 10px;
+  width: 92%;
+}
+.subscribe {
+  margin-top: 10px;
+  width: 100%;
+}
+.Newsletter-img-div > img {
+  width: 100%;
+}
+.Newsletter-img-div > div {
+  border-radius: 16px;
+  background: rgb(255, 84, 0);
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-top: -182px;
+  margin-left: calc(100% - 324px);
+  transform: rotate(-35deg);
+  padding: 15px;
+}
+.Newsletter-img-div > div{
+  text-align: center;
+}
+.Newsletter-img-div > div > h5 {
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.Newsletter-img-div > div > h2 {
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* footer  */
+footer{
+  margin: 0px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 150px;
+  text-align: center;
+  padding: 100px;
+}
 
 /* ===========================================Responsive Code============================================= */
 /* media query style  */
@@ -130,7 +261,11 @@ align-items: center;
   .header-with-logo,
   .nav-ul-tag,
   .header-container-search,
-  .Our-Popular-Tours {
+  .Our-Popular-Tours,
+  .destination-1st-img-line,
+  .why-choose-us-card-container,
+  .Simple-Perfect-Place,
+  .Newsletter {
     flex-direction: column;
     padding: 10px;
   }
@@ -142,6 +277,23 @@ align-items: center;
   .Our-Popular-Tours-img > img {
     width: 100%;
   }
+  .Newsletter-img-div > div {
+    border-radius: 16px;
+    background: rgb(255, 84, 0);
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin-left: calc(100% - 60%);
+    transform: rotate(-35deg);
+  }
+  .Newsletter-img-div > div > h5, h2{
+    font-size: 1rem;
+    margin: 0;
+  }
+  .Newsletter-img-div > div > h2{
+    font-size: 1rem;
+    margin: 0;
+  }
 }
 
 /* for tablet devices */
@@ -149,7 +301,11 @@ align-items: center;
   nav,
   .header-with-logo,
   .header-container-search,
-  .Our-Popular-Tours {
+  .Our-Popular-Tours,
+  .destination-1st-img-line,
+  .why-choose-us-card-container,
+  .Simple-Perfect-Place,
+  .Newsletter {
     flex-direction: column;
   }
 }
