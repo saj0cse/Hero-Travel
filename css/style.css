@@ -6,7 +6,7 @@ body {
   font-family: "Mulish", sans-serif;
 }
 header, main, footer{
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
   width: 90%;
 }
@@ -68,7 +68,7 @@ nav,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0px;
+  gap: 30px;
 }
 .nav-ul-tag > li {
   list-style: none;
@@ -401,7 +401,8 @@ footer {
   background: rgba(19, 19, 24, 0.05);
   margin-top: 150px;
   text-align: center;
-  padding: 100px;
+  padding: 100px 0;
+  width: 100%;
 }
 footer>div{
   display: flex;
